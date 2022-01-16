@@ -1,0 +1,15 @@
+@import '@assets/fonts/fonts.scss';
+@import '@assets/base/base.scss';
+
+.app {
+	max-width: 1440px;
+	margin: 0 auto;
+	min-height: 100%;
+	overflow: hidden;
+	padding: 0 15px;
+	position: relative;
+	font-family: 'Rubik';
+	font-weight: 700;
+	font-size: rem(50);
+}
+
