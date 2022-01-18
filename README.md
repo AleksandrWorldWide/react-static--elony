@@ -1,3 +1,3 @@
-base version for creating 'landing' in React
+landing "Elony" site
 
-with alias, add images, fonts use function components
+no adaptive

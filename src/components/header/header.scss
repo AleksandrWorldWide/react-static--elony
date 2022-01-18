@@ -1,5 +1,59 @@
-header {
-	font-size: 40px;
-	font-weight: 400;
-	text-transform: uppercase;
+@import '@assets/base/base.scss';
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: rem(13);
+	&__logo {
+
+	}
+	&__menu {
+		width: rem(665);
+
+	}
+	&__lang {
+		position: relative;
+		padding-left: 21px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 16px;
+			height: 16px;
+			background-image: url('../../assets/icons/lang.png');
+		}
+	}
+}
+
+.list-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__item {
+		list-style-type: none;
+	}
+	&__link {
+		font-size: rem(14);
+		line-height: percent(17,14);
+		text-decoration: none;
+		position: relative;
+		padding: 10px;
+		&:hover {
+			border-bottom: 2px solid yellow;
+		}
+		&:focus {
+			color: #07275C;
+			border: 2px solid yellow;
+			border-radius: 35px;
+		}
+	}
+}
+
+.lang-header {
+	&__link {
+		list-style-type: none;
+		text-decoration: none;
+	}
 }

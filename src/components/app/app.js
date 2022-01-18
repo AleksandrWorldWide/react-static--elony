@@ -1,7 +1,11 @@
 import 'normalize.css';
 import Header from '@components/header/header';
+import Main from '@components/main/main';
 import Footer from '@components/footer/footer';
-import wow from '@assets/images/wow.jpg';
+import Portfolio from '@components/portfolio/portfolio';
+import Blog from '@components/blog/blog'
+import About from '@components/about/about'
+import Contacts from '@components/contacts/contacts';
 import './app.scss';
 
 
@@ -9,8 +13,11 @@ export default function App() {
 	return (
 		<div className="app">
 			<Header/>
-			<h1>Hallo</h1>
-			<img src={wow} alt="wow" />
+			<Main/>
+			<Portfolio/>
+			<Blog/>
+			<About/>
+			<Contacts/>
 			<Footer/>
 		</div>
 		

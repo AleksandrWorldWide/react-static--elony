@@ -1,0 +1,36 @@
+@import '@assets/base/base.scss';
+
+.about {
+	margin-top: 118px;
+	width: 555px;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: -120%;
+		background: url('../../assets/icons/about.png') no-repeat;
+	}
+	&__title {
+		font-size: 36px;
+		line-height: 1.5;
+	}
+	&__body {
+		margin-top: 30px;
+		p {
+			margin-bottom: 30px;
+			font-size: 16px;
+			line-height: 1.5;
+			font-weight: 400;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	&__btn {
+		margin-top: 30px;
+		padding-bottom: 30px;
+	}
+}

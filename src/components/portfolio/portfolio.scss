@@ -1,0 +1,66 @@
+@import '@assets/base/base.scss';
+
+.portfolio {
+
+	&__title {
+		font-size: 36px;
+		line-height: 1.5;
+		margin-bottom: 25px;
+	}
+	&__menu {
+		margin-bottom: 34px;
+	}
+}
+
+.menu-portfolio {
+	width: 514px;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item {
+		font-size: 16px;
+		line-height: percent(19,16);
+	}
+	&__link {
+		&:hover {
+			border-bottom: 2px solid yellow;
+			font-size: 22px;
+		}
+	}
+}
+
+.content-portfolio {
+	width: $appWidth;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 1 33.3333%;
+	column-gap: 20px;
+	&__card {
+
+	}
+}
+
+.card-portfolio {
+	
+
+	&__img {
+		margin-bottom: 18px;
+		width: 393px;
+		height: 299px;
+
+	}
+	&__name {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: percent(24,20);
+		margin-bottom: 8px;
+	}
+	&__subname {
+		font-size: 16px;
+		line-height: percent(28,16);
+		color: rgba(7, 39, 92, 0.6);
+	}
+}

@@ -1,0 +1,111 @@
+@import '@assets/base/base.scss';
+
+.btn {
+	@include btn;
+}
+
+.main {
+	&__content {
+		position: relative;
+		margin-top: 110px;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 780px;
+			height: 348px;
+			background-image: url('../../assets/icons/main-content.png');
+			z-index: -1;
+		}
+	}
+	&__body {
+
+	}
+}
+
+.content-main {
+	&__title {
+		font-size: rem(50);
+		line-height: 1.5;
+		width: 653px;
+	}
+	&__btn {
+		margin-top: 72px;
+		margin-bottom: 230px;
+	}
+}
+
+.body-card {
+	position: relative;
+	margin-bottom: 200px;
+	margin-left: 585px;
+	&:last-child {
+		margin-bottom: 157px;
+	}
+	&__title {
+		font-size: rem(50);
+		line-height: 1.5;
+		margin-bottom: 37px;
+	}
+	&__list {
+		list-style-type: none;
+		margin-bottom: 51px;
+		li {
+			font-weight: 400;
+			font-size: rem(20);
+			line-height: 1.5;
+			margin-bottom: 30px;
+			position: relative;
+			padding-left: 21px;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				width: 8px;
+				height: 8px;
+				background-color: yellow;
+				border-radius: 100%;
+			}
+		}
+	}
+	&__btn {
+	}
+	&_design {
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -115%;
+			width: 100%;
+			height: 100%;
+			background: url('../../assets/icons/Img_Design.png')
+		}
+	}
+	&_dev {
+		&::before{
+			content: '';
+			position: absolute;
+			top: -10%;
+			left: -117%;
+			width: 100%;
+			height: 100%;
+			background: url('../../assets/icons/Img Development.png')
+		}
+		
+	}
+	&_smm {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -115%;
+			width: 100%;
+			height: 100%;
+			background: url('../../assets/icons/Img_SMM.png')
+		}
+		
+	}
+}

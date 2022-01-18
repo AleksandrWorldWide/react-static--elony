@@ -1,15 +1,82 @@
 @import '@assets/fonts/fonts.scss';
 @import '@assets/base/base.scss';
 
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	// outline: none;
+}
+a:focus,
+a:active {
+	// outline: none;
+}
+
+body {
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+	background-color: #3D85F9;
+	color: #07275C;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+ul, nav {
+	margin: 0;
+}
+
 .app {
-	max-width: 1440px;
+	max-width: rem(1117);
 	margin: 0 auto;
 	min-height: 100%;
 	overflow: hidden;
-	padding: 0 15px;
+	padding: 0 rem(15);
 	position: relative;
 	font-family: 'Rubik';
-	font-weight: 700;
-	font-size: rem(50);
+	font-weight: 500;
 }
 

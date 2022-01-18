@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "mini-css-extract-plugin": "2.4.5",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.1.11"
   }

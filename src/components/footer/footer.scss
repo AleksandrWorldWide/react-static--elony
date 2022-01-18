@@ -1,0 +1,36 @@
+@import '@assets/base/base.scss';
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 13px;
+	&__item {
+		
+	}
+}
+
+.item-footer_r {
+	width: 281px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: percent(14,27);
+	&__left {
+		
+	}
+	&__right {
+	}
+}
+
+.item-footer_l {
+	width: 380px;
+	font-weight: 400;
+		font-size: 12px;
+		line-height: percent(12,27);
+	&__one {
+		
+	}
+}
